@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .z1{
+                background-color: red;
+                position: absolute;
+                top: 20px;
+                left:20px;
+                width: 50px;
+                height: 50px;
+
+        }
+        .z2{
+                  background-color: blue;
+                 
+                  top: 30px;
+                  left: 30px;
+                  z-index: -1;
+                  width: 50px;
+                  height: 50px;
+                  position:relative;
+        }
+
+          @media screen and (max-width: 1200px){
+            .media{
+                color: red;
+            }
+          }
+          @media screen and (max-width: 800px){
+            .media{
+                color:blue;
+            }
+
+            @media screen and (max-width: 500px){
+                .media{
+                    color: pink;
+                }
+            }
+          }
+
+          .transition{
+            width: 200px;
+            height: 200px;
+            background: red;
+            margin: 10rem;
+           transition: all 2s  1s linear;
+        /*transition-duration: 8s;
+         transition-delay: 1s ;
+         transition-property: all;*/
+          } 
+          .transition:hover{
+            border-radius: 50%;
+            background-color: yellow;
+
+          }
+
+
+
+
+          #one{
+               background: green;
+               width: 200px;
+               height: 200px;
+               margin-left: 100px;
+
+          }
+
+          #two{
+             background-color: blue;
+             width: 200px;
+             height: 200px;
+             margin-top: 100px;
+               margin-left: 100px;
+               transition: all 2s linear;
+          }
+
+          #two:hover{
+            transform: translate(45px,45px);
+     
+          }
+
+          #one:hover{
+            transform: skewX(25deg);
+          }
+
+          #three{
+            background-color: yellow;
+            width: 100px;
+            height: 100px;
+            margin-top: 100px;
+            margin-left: 100px;
+            margin-bottom: 100px;
+          }
+          #three:hover{
+            transform: scale(2)
+          }
+
+          #four{
+            background-color: black;
+            width: 100px;
+            height: 100px;
+            margin-top: 100px;
+            margin-left: 100px;
+            margin-bottom: 100px;
+            transition: all 2s linear;
+          }
+          #four:hover{
+            transform: rotate(360deg);
+          }
+
+          #five{
+            background-color: yellow;
+            width: 100px;
+            height: 100px;
+            top:20px;
+           bottom:20px;
+           
+            transition: all 0.5s ease-in-out;
+          }
+
+          #five:hover{
+           /*transform: scale3d(2,3,-2);*/
+           transform: translate(0px,200px);
+           
+          }
+
+          .inner{
+                
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+          }
+          .outer{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+          }
+
+          .gap{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            gap: 10px 150px;
+            row-gap: 10px;
+            column-gap: opx;
+            
+
+          }
+          .gap1{
+            grid-area: -1/1/span2/span2;
+          }
+          .ani{
+            margin-top: 100px;
+            margin-bottom: 100px;
+            text-align: center;
+            animation: animate 1s infinite 2s;
+            /*animation-direction:alternate-reverse;*/
+          }
+          .ani:hover{
+            color:blue;
+            font-size: 2rem;
+          }
+
+         /* @keyframes animate{
+            0%{
+              color:blueviolet;
+              font-size: 30px;
+              transform: translate(0px, -200px);
+            }
+            50%{
+
+              color:rgb(30, 211, 100);
+              font-size: 70px;
+
+            }
+            100%{
+              color:rgb(216, 27, 27);
+              font-size: 30px;
+            }
+          }*/
+
+           
+
+
+
+
+
+
+          .flow{
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+            border: 2px solid blue;
+            overflow: visible ;
+          }
+         
+          .psudeo1::first-letter{
+            text-transform: capitalize;
+            color: blue;
+            font-size: 4rem;
+            text-indent: 80px;
+          }
+
+          .psudeo2::first-line{
+            color: blue;
+          }
+
+          .psudeo3::after{
+                content:"THIS Is After";
+                color: red;
+          }
+
+          .psudeo4::before{
+            content:"BEFORE";
+            color: purple;
+          }
+
+          .psudeo5::selection{
+            background: black;
+            color: white;
+          }
+
+
+
+
+
+
+       
+    </style>
+</head>
+<body>
+    <!-- z-index - this is used to change the positions like up and down , and positions are overlaped-->
+     
+
+    <h1 class="z1">1</h1>
+    <h1 class="z2">2</h1>
+
+<br><br><br>
+    <!-- @media css quries = this is increase or decrease the screen size of content styles and content are change  -->
+
+    <!-- web site browser size adjusted automatically add the width  -->
+
+    <!-- max-width - 1200 for desktop,992 for tablets,768px for mobiles,480 for small mobile screens  ( and also we can set the max-width are 2000px if u want increase that your depents)-->
+<!-- bigger to lower screen -->
+
+    <!-- min-width - smaller to bigger-->
+    <h1 class="media">
+        This the medai tag
+    </h1>
+
+
+    <!-- transition - css transitions allows to change the property of values,over a given duration  -->
+
+    <h4 class="transition">transition</h4>
+
+
+
+    <!-- transform - css transform are allows to change the move,rotate,scale,skew,translate--->
+     <!-- transition: translate(0px,100px)up and down the animation -->
+
+    <div id="one"></div>
+    <div id="two"></div>
+    <div id="three"></div>
+    <div id="four"></div>
+    <div id="five"></div>
+
+    <!-- grid- -->
+
+
+    <div class="outer">
+      <div class="inner inner1">inner1</div>
+      <div class="inner inner2">inner2</div>
+      <div class="inner inner3">inner3</div>
+      <div class="inner inner4">inner4</div>
+      <div class="inner inner5">inner5</div>
+      <div class="inner inner6">inner6</div>
+      <div class="inner inner7">inner7</div>
+      <div class="inner inner8">inner8</div>
+      <div class="inner inner9">inner9</div>
+      <div class="inner inner10">inner10</div>
+    </div>
+
+
+
+    <!-- gap - it is used to gap the object ivide the one by one-->
+
+    <!-- gap, row-gap,column-gap,grid-column,grid-row  -->
+
+    <div class="gap">
+      <div class="gap gap1">gap1</div>
+      <div class="gap gap2">gap2</div>
+      <div class="gap gap3">gap3</div>
+      <div class="gap gap4">gap4</div>
+      <div class="gap gap5">gap5</div>
+    </div>
+
+
+    <!-- animations - animates an object with use animation attribute -->
+
+    <!-- animation-direction:reverse,alternate,alternate-reverse -->
+
+
+    <!-- animation : anim 2s infinate 2s -->
+     <!-- /animation-duration: -->
+      <!-- animation-timing-function: ease-in,ease-out,ease-in-out -->
+       <div>
+    <div class="ani">HELLO</div>
+  </div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <!-- overflow -->
+     <!-- hidden,auto ,scroll,visible -->
+       <div>
+     <h1 class="flow"></h1>
+    </div>
+
+
+
+    <!-- css psudeo elements -->
+     <!-- ::first-letter -->
+      <!-- ::first-line -->
+       <!-- ::before  -->
+        <!-- ::after -->
+         <!-- ::selection -->
+
+         <h1 class="psudeo psudeo1">tHIS IS THE PSUDEO ELEMENTS</h1>
+         <h1 class="psudeo psudeo2">THIS IS THE PSUDEO ELEMENTS</h1>
+         <h1 class="psudeo psudeo3">THIS IS THE PSUDEO ELEMENTS</h1>
+         <h1 class="psudeo psudeo4">THIS IS THE PSUDEO ELEMENTS</h1>
+         <h1 class="psudeo psudeo5">THIS IS THE PSUDEO ELEMENTS</h1>
+
+
+
+
+
+</body>
+</html>

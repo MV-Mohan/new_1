@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200 " />
+    <style>
+        .h1{
+            color: red;
+            background-color: yellow;
+        }
+        #h1{
+            color: red;
+        }
+        #h2{
+            color: blue;
+        }
+        .h3{
+             background-color: palegreen;
+             color: black;
+        }
+        /*{
+            color: red;
+        }*/
+        h2{
+            background-color: blueviolet;
+        }
+        body{
+            background-image:url('./IMG-20240906-WA0022.jpg') ;
+            background-repeat: repeat;
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position: 0px 0px, 300px 0px,600px 0px,;
+            /*background-blend-mode:hard-light;*/
+        }
+
+        p{
+            margin: 80px;
+        }
+        #h5{
+            padding: 30px;
+        }
+        .border{
+            border: 2px solid blue;
+            border-width: 2rem;
+            border-top-color: aqua;
+            border-bottom-color: aqua;
+            border-top-left-radius: 5rem;
+           /* border-style:outset;*/
+        }
+        .two{
+            margin:50px;
+            border: 2px dotted green;
+            padding: 20px;
+            text-align: center;
+            border-top: white;
+            border-bottom:white;
+            border-width: 1.2rem;
+        }
+        .f1{
+             color: aquamarine;
+             font-family: sans-serif;
+             font-weight: 1000;
+             font-variant:small-caps;
+
+        }
+
+        .f2{
+            color:blueviolet;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+        }
+        .f3{
+            color:blanchedalmond;
+            font-size: 100px;
+        }
+        .t1{
+            text-decoration: underline;
+            text-decoration-color: purple;
+            text-decoration-line:overline;
+
+            
+        }
+        .t2{
+            text-transform:capitalize;
+            text-indent: 60px;
+
+        }
+        .t3{
+            text-indent: 30px;
+            text-shadow: 2px 5px green;
+            font-size: 50px;
+        }
+        a{
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        ul{
+            list-style-type:square;
+            list-style-image: url('./icons8-dancing-64.png' );
+            margin: 70px;
+            background-size: 95px;
+            height: 15px;
+
+        }
+
+       
+        
+         li::marker{
+            color: red;
+            
+         }
+
+         a{
+            text-decoration: underline;
+         }
+
+         .a1:visited{
+              color: aquamarine;
+         }
+         .al:unvisited{
+              color:blueviolet;
+         }
+         .a1:active{
+            color: hotpink;
+         }
+         a:hover{
+           background-color: blue;
+         }
+        .box{
+            text-indent:20px;
+            line-height: 50px;
+            word-spacing: 2em;
+            text-shadow: 2px 2px blueviolet;
+            text-decoration: none;
+            border:1px solid black;
+        }
+        h1.box{
+            box-shadow:2px 5px 30px yellow;
+
+            filter:drop-shadow(1px 1px 20px white)
+
+
+        }
+        .color1{
+            background-color: blue;
+            color: white;
+        }
+        .color2{
+            background-color: rgb(255,0,0);
+            /*rgb(0,255,0),rgb(0,0,0)*/
+            color: rgb(255,255,255)
+        }
+        .color3{
+            background-color:#733889;
+            color:#f0f0f0;
+        }
+
+
+        .css1{
+           font-size: 20px;
+        }
+        .css2{
+            font-size: 7em;
+        }
+        .css3{
+            font-size: 7rem;
+        }
+        .css4{
+            font-size:250%;
+            /*height: 300vh;*/
+            font-family:monospace;
+            font-style: italic;
+        }
+
+        .css4{
+            font-size: 5vw;
+        }
+
+        .font{
+            font-family: "Playwrite DE Grund", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight
+        }
+
+.flow{
+    overflow: hidden;
+}
+
+.p1{
+    position: static;
+
+}
+.p2{
+    position: sticky;
+}
+.p3{
+    position: fixed;
+}
+.p4{
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+}
+.p5{
+    position: relative;
+}
+
+#z1{
+    background: red;
+    color: white;
+    position: absolute;
+    left: 20px;
+    
+}
+#z2{
+    background: #733889;
+    position:relative;
+    top:20px;
+    left: 20px;
+}
+
+.as1{
+    align-self: center;
+}
+
+
+
+
+.inner{
+    width: 100px;
+    height: 100px;
+    background-color: hotpink;
+
+}
+.inner2{
+    background: linear-gradient(to top, red,orange)
+}
+.inner1{
+    background: linear-gradient(to left,pink,black,white);
+}
+
+.inner3{
+    background: linear-gradient(to right,pink 0% , pink 50%,rgb(18, 7, 235) 100%);
+}
+
+.inner4{
+   /* background: repeating-linear-gradient(to right , red,violet,purple);*/
+
+   background: repeating-linear-gradient(to right,red 10% , blue 30%);
+}
+.inner5{
+    background: radial-gradient(red,blue);
+}
+.inner6{
+    background: conic-gradient(red,blue,pink);
+}
+.inner7{
+    background: conic-gradient(from 45deg,pink 0%,blue 40%,red 60%,purple 90%,white 100%);
+}
+
+.inner8{
+    background: conic-gradient(from 90deg,white 20%,black 30%,white 60%, black 100%);
+}
+
+.inner9{
+    background: radial-gradient(at 100px 100px blue , violet);
+}
+        
+        
+        
+    </style>
+</head>
+<body>
+
+    <!-- css - cascading style sheets -->
+<!--  3-types  -->
+  <!-- 1.inline css-we apply the styles in tags like  -->
+   <h1 style="color: #00f0f0">THiS IS INLINE CSS</h1>
+  <!-- 2.internal css- we apply the css in while using the style name <style></style>-->
+
+  <h1 class="h1">THIS IS THE INTERNAL CSS</h1>
+
+  <!-- 3.external css- it is connected to the html page while using the creating an new file like index.css -->
+      <h1>THIS IS THE EXTERNAL CSS</h1>
+
+
+    
+
+      <!-- css-selectors -->
+       <!-- selector is nothing but attributes -->
+        <!-- 4 types of selectors -->
+         <!-- 1.   element selector   - this are used to select the name like div h1 -->
+          <!-- 2. id selector -  this is are used to select the id name , adv: same tags but we applying an same tag with dirrent colors using the (id indicated by # )-->
+           <h1 id="h1">This Is The ID</h1>
+            <h1 id="h2">This Is The ID</h1>
+            <!-- 3.class selector - this is are used to select the class name to internal css with the class change the class same as id (class is indicated the .) -->
+            <h1 class="h3">THIS IS THE CLASS SELECTOR</h1>
+            <!-- 4.universal selector - this are the used in every css beacuse used to this selector hole code is applied -->
+             <h2>THIS IS THE UNiVERSAL SELECTOR</h2>     
+             
+             
+
+
+            <!-- background- this are used to change the backround colors on web pages-->
+             <!-- different types of the backgrounds are in the css 1. backround-image:url(''),2.background-repeat: norepeat,repeat 3.background-size: fixed, 4.background-position: 0px 0px,300px 0px , 600px 0px;-->
+             <h1 style="background: pink">THIS IS A BACKGROUND</h1>
+             <h2>THIS IS A BACKGROUND</h2>
+
+
+
+
+
+             <!-- margin and padding -->
+
+             <!-- /margin-outside the border space is called as margin  -->
+             <!-- margin:2px 3px 5px 6px -->
+                    <!-- top  left bottom right -->
+             <!-- margin: 20px 40px -->
+              <!--     top,left  bottom,right  -->
+             <div>
+                <p>The Margin</p>
+             </div>
+
+             <!-- padding - inside the border space  is called padding -->
+              <!-- padding: 20px 40px 30px 20px  same as margin-->
+               <!-- padding: 20px 20px  -->
+
+               <div>
+                <h5 id="h5">
+                    THE PADDING
+                </h5>
+               </div>
+
+             <!-- border - this is used to set the border in the particular content -->
+
+             <!-- border are the different methods like 1.border 2.border-radius 3.border-color 4.border-top-color,border-bottom-color,right,left 5.border-top-left-radius 6.border-style,solid,dotted,dashed,none,hidden,groove 7.border-width-->
+             <div class="border">
+                <h1>
+                    This is the border
+                </h1>
+             </div>
+
+             <div class="two">
+                THIS IS BORDER_STYLE
+             </div>
+
+
+
+
+                <!-- fonts-fonts is used to change the colors ans styles and text -->
+                 <!-- fonts like font-size,font-weight, font-varient, font-style -->
+                 <h1 class="f1">This is the font-color</h1>
+                 <h1 class="f2">this is the font-size</h1>
+                 <h1 class="f3">this is the font-style</h1>
+
+
+
+                 <!--text- this are only applicabe on text content only  -->
+
+                 <!-- some texts are like 1.text-decoration,none,underline,overline 2. text-transform,capitalize,lowercase,uppercase 3.text-indent-space are coming like start the para 4.text-shadow: 1px horizontal 3px vertical green; 4.text-align 5.text-decoration-color-->
+                 <h1 class="t1">This is the text</h1>
+                 <h1 class="t2">This is the text</h1>
+                 <h1 class="t3">This is the text</h1>
+                 <a href="">this is the text</a>
+
+
+                 <!-- lists -->
+                  <!-- mainly two types of lists ordered and unordered list -->
+                  <!-- only css are orderlist and unorder list -->
+                   <!-- 1. list-style-type:square,circle,disc,lower-alpha,lower-roman,decimal 2.list-type-image:url('')3.list-style-position: inside,outside  -->
+                    <!-- change the bullet color use li:marker{
+                     color: blue;} -->
+                 
+                  <ul>
+                    <li>This Is The Lists</li>
+                  </ul>
+                    
+
+
+                  <!-- css links - links usig psudeo classes -->
+                   <!-- ther are 4types -->
+                    <!-- link,visited,hover,active -->
+                     <!-- chnage the colors using he pseudo elements
+                      like a:visited,a:active,a:hover -->
+                      This is the css links<br><br>
+                     <a class="a1" href="">visited</a> <br><br>
+                     <a class="a2" href="">unvisited</a><br><br>
+                     <a class="a3" href="">active</a> <br><br>
+                     <a class="a4" href="">hover</a><br><br>
+
+                     <!-- box-model -->
+                      <!-- 1.text-indent-space give the starting of the paragraph -->
+                       <!--2.line-height: increase the line upside space -->
+                       <!-- 3.word-spacing: it gives the space of the letters -->
+                        <!-- 4.text-decoration -->
+                         <!-- ** box-model-> box-shadow: 1px 2px 20px yellow -->
+                          <!--filter:drop-shadow:1px 2px 20px black;  -->
+
+                        <h1 class="box">THis is the box-model</h1>
+
+
+                    
+
+
+                        <!-- diffrence between class and id -->
+                         <!-- single elemnts define,group element use in class -->
+                          <!-- specific elements define the id -->
+
+
+
+                          <!-- **specificity -->
+                           <!-- id has more specificity that class,class are more specificity than id -->
+                            <!-- id > class > element -->
+                             <!-- class is more specifity than elements -->
+
+
+                            <!--  css colors foramats-->
+                             <!-- there are the 6 types of colors1. rgb(red  green blue),2.rgba(red green blue ) 3. hexa 4. hsl 5. color name 6. hsla -->
+
+                             <div>
+                             <h4 class="color1">color name</h4>
+                             <h4 class="color2"> color rgb</h4>
+                             <h4 class="color3"> color hexa decimal</h4>
+                             </div>
+
+                        <!-- css units -->
+                         <!-- there are the css sizes are px(this are the absolute size  1px =0.23cm) em(related to its font size) rem-(related to the root element ) %-(related to parent width/heigth ) vw/vh(view height,view width  ==related to the screen size) -->
+                     <br> <br> <div>
+                         <h1 class="css1">THIS THE CSS UNITS</h1>
+                         <h1 class="css2">THIS THE CSS UNITS</h1>
+                         <h1 class="css3">THIS THE CSS UNITS</h1>
+                         <h1 class="css4">THIS THE CSS UNITS</h1>
+                         </div>
+
+
+
+                         <!-- css icons -->
+                          <!-- it is used to add the styles of the web pages like icons and fonts -->
+                          <!-- some websites are the google fionts , awesome fonts copy the cdn and paste on the css and body -->
+
+
+                          <h1 class="font" style="color:red">This is the css icons and fonts</h1>
+                          <span class="material-symbols-outlined">
+                            block
+                            </span>
+
+                            <span class="material-symbols-outlined">
+                                keyboard_double_arrow_right
+                                </span>
+                              
+
+                                <!-- text-align = this is used to set the content on center,right,left -->
+
+                                <!-- leeter-spacing -->
+                                <h6 style="text-align:center">THIS IS THE ALIGN ITEMS</h6>
+                                <h6 style="text-align: right">THIS IS THE ALIGN ITEMS</h6>
+                                <h6 style="text-align: left; letter-spacing: 20px;">THIS IS THE ALIGN ITEMS</h6>
+
+
+
+                                <!-- buttons- it is used click the button using submiting any thing we use the buttons -->
+                                 <h1>Different types of buttons</h1>
+                                 <button>SUBMIT</button>
+<br><br>
+                                 <div></div>
+                                 <a  href="#" class="btn">SUBMIT</a>
+                                  <br><br>
+                                  <input type="submit" class="btn btn-warning">
+
+
+
+
+                                <!--display- displays are , display: flex;,display: grid;,display: inline,inline-block,block  -->
+
+                                <h5>This is the display</h5>
+                                <h5>This is the display</h5>
+                                <h5>This is the display</h5>
+                                <h5>This is the display</h5>
+                                <h5>This is the display</h5>
+
+                                <!-- justify-content:is along the flex direction, center,right,left,space between ,space around,space evenly  -->
+                                 <!-- flex-direction: column ,row ,column-reverse,row-reverse-->
+                                  <!-- align-items: center ,left,right.start,end -->
+                                   <!-- flex-wrap: display the hole display of the content used the ,wrap,no wrap -->
+                                    <div id="div1">
+                                   <div class="div" style="background-color:orange;">1</div>
+                                   <div class="div" style="background-color: pink;">2</div>
+                                   <div class="div" style="background-color: yellow;">3</div>
+                                   <div class="div" style="background-color: red;">4</div>
+                                    </div>
+
+
+            <!-- overflow-hidden is most used in the web pages -->
+             <h1 class="flow">THis is the overflow</h1>
+<br><br><br>
+
+             <!-- css positions are static,fixed,absolute,relative,sticky -->
+
+             <h1 class="p1">this is the STATIC</h1>
+             <h1 class="p2">this is the absolute</h1>
+             <h1 class="p3">this is the relative</h1>
+             <h1 class="p4">this is the fixed</h1>
+             <h1 class="p5">this is the sticky</h1>
+
+                              
+
+<!-- z-index -->
+ <!-- this is used to change the place of content boxes in the web pages -->
+  <!-- default as 1 -->
+   <!-- reverse are -1 -->
+
+   <div id="z1"> hello</div>
+   <div id="z2"> hii</div>
+
+
+
+   <!-- align-self : it is also change the right left and center -->
+
+   <h1 class="as1">this is the align-self</h1>
+   <h1 class="as2">this is the align-self</h1>
+   <h1 class="as3">this is the align-self</h1>
+
+<!-- css gradient  -->
+<!-- add the two colors at a time and at one object -->
+
+
+
+<h6 class="inner inner1">1</h6>
+<h6 class="inner inner2">2</h6>
+<h6 class="inner inner3">3</h6>
+<h6 class="inner inner4">4</h6>
+<h6 class="inner inner5">5</h6>
+<h6 class="inner inner6">6</h6>
+<h6 class="inner inner7">1</h6>
+<h6 class="inner inner8">2</h6>
+<h6 class="inner inner9">3</h6>
+
+
+
+
+
+ 
+                     
+
+             
+</body>
+</html>
